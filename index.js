@@ -145,10 +145,13 @@ console.log(addMenuItem(menu, newMenuItem));
     ANSWER: 3
     **********/
 
-function countMainCourseItems(menu) {
-  // Your code here
-}
-// console.log(countMainCourseItems(menu));
+const countMainCourseItems = menu.filter((menu) => {
+  if (menu.category == "Main Course") {
+    return true;
+  }
+});
+
+console.log(countMainCourseItems.length);
 
 /**********
     Question 5: 🌶️
@@ -160,9 +163,7 @@ function countMainCourseItems(menu) {
     ANSWER: ["Pasta", "Burger", "Pizza"]
     **********/
 
-function listMenuItemNamesByCategory(menu, category) {
-  // Your code here
-}
+function listMenuItemNamesByCategory(menu, category) {}
 // console.log(listMenuItemNamesByCategory(menu, "Main Course"));
 
 /**********
